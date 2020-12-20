@@ -80,10 +80,6 @@ body {
 }
 
 nav {
-    margin: 27px auto 0;
-    position: relative;
-    width: 670px;
-    height: 50px;
     background-color: #34495e;
     border-radius: 80px;
     font-size: 0;
@@ -103,12 +99,7 @@ nav a {
 }
 
 nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 80px;
+    display: none;
 }
 
 a:nth-child(1) {
@@ -168,7 +159,7 @@ p>button {
 #burger {
     cursor: pointer;
     font-size: 25px;
-    color: forestgreen;
+    color: white;
 }
 
 .sidenav {
@@ -181,24 +172,22 @@ p>button {
     background-color: #34495e;
     overflow-x: hidden;
     transition: 0.5s;
-    text-align: center;
+    text-align: left;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    margin-left: 5%;
+    text-align: left;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: white;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav #closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    float: right;
+    font-size: 50px;
 }
 
 #mySidenav {
@@ -210,7 +199,7 @@ p>button {
 }
 
 #wooper {
-    color: forestgreen;
+    color: white;
     display: inline-block;
     background: #34495e;
     border-bottom-right-radius: 100%;
@@ -219,4 +208,11 @@ p>button {
     margin-left: 3%;
     margin:auto;
     width: 60%;
+}
+
+.sidenav {
+    padding-top: 15px;
+}
+.sidenav a {
+    font-size: 18px;
 }

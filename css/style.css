@@ -213,3 +213,6 @@ p>button {
     float: left;
 }
 
+#mySidenav {
+    display: none;
+}
