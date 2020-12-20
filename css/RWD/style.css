@@ -35,11 +35,6 @@ body {
 }
 
 
-header {
-    height: 15%;
-    padding-top : 20px;
-}
-
 #logoIUT {
     display: none;
 }
@@ -169,3 +164,27 @@ p>button {
     float: left;
 }
 
+
+#mySidenav {
+    display: none;
+}
+
+#wrapper-nav {
+    display: none;
+}
+
+#wooper {
+    display: inline-block;
+    background: #34495e;
+    padding: auto;
+    margin: auto;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin-right: 20%;
+    margin-left: 3%;
+}
+
+#wooper {
+    margin:auto;
+    width: 60%;
+}

@@ -38,13 +38,46 @@
                 <a href="https://www.iut-rcc.fr/" target="_blank" rel="noopener"><img src="img/logoiut.png" id="logoIUT"></a>
             </div>            
                 
-            <nav class="col-xl-6">
-                <a href="index.html">Accueil</a>
-                <a href="Metiers.html">Les Metiers</a>
-                <a href="Pentester.html">PENTESTER</a>
-                <a href="aPropos.html">A Propos</a>
-                <div class="animation start"></div>
-            </nav>
+            <div id="mySidenav" class="sidenav">
+                <nav class="nav-sub">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Accueil</a>
+                    <a href="Metiers.html">Les Metiers</a>
+                    <a href="Pentester.html">PENTESTER</a>
+                    <a href="aPropos.html">A Propos</a>
+                    <div class="animation start"></div>
+                </nav>
+            </div>
+
+            <div id="wooper" class="sticky-top">
+                <span onclick="openNav()" id="burger">&#9776;</span>
+                <div id="seperate">
+                </div>
+            </div>
+            <script>
+                function openNav() {
+                    if (fullWidth >= 330) {
+                        document.getElementById("mySidenav").style.display = "block";
+                    }
+                    document.getElementById("mySidenav").style.height = "100%";
+                }
+
+                function closeNav() {
+                    if (fullWidth >= 330) {
+                        document.getElementById("mySidenav").style.display = "none";
+                    }
+                    document.getElementById("mySidenav").style.height = "0%";
+                }
+            </script>
+            <div id="wrapper-nav">
+                <nav class="nav-main">
+                    <a href="index.html">Accueil</a>
+                    <a href="Metiers.html">Les Metiers</a>
+                    <a href="Pentester.html">PENTESTER</a>
+                    <a href="aPropos.html">A Propos</a>
+                    <div class="animation start"></div>
+                </nav>
+            </div>
         </header>
 
         <div>
