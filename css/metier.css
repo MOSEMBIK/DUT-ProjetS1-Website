@@ -216,7 +216,7 @@ button:hover {
     display: block;
 
     /* The image used */
-    background-image: url("../img/metier/pc.png");
+    background-image: url("../img/metier/Anal.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -231,15 +231,15 @@ button:hover {
     display: block;
 
     /* The image used */
-    background-image: url("../img/metier/pc.png");
+    background-image: url("../img/metier/Inte.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 
-    margin-bottom:-5%;
+    margin-bottom:-2%;
 
     /* Full height */
-    height: 200px;
+    height: 150px;
     width: 200px;
 }
 #ILInte {
