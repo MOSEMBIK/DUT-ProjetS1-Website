@@ -185,7 +185,7 @@ button:hover {
     background-size: contain;
     background-position: center;
 
-    margin-bottom:-5%;
+    margin-bottom:-4%;
 
     /* Full height */
     height: 200px;
@@ -206,7 +206,7 @@ button:hover {
     background-size: contain;
     background-position: center;
 
-    margin-bottom:-5%;
+    margin-bottom:-2%;
 
     /* Full height */
     height: 200px;
@@ -221,7 +221,7 @@ button:hover {
     background-size: contain;
     background-position: center;
 
-    margin-bottom:-5%;
+    margin-bottom:-2%;
 
     /* Full height */
     height: 200px;
@@ -257,7 +257,8 @@ button:hover {
     background-size: contain;
     background-position: center;
 
-    margin-bottom:-5%;
+    margin-bottom:-2%;
+    margin-right: 5%;
 
     /* Full height */
     height: 200px;
