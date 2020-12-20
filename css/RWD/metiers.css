@@ -3,33 +3,6 @@
  SPECIFIC CSS
 */
 
-nav .start-1,
-a:nth-child(1):hover~.animation {
-    width: 150px;
-    left: 35px;
-    background-color: green;
-}
-
-nav .start,
-a:nth-child(2):hover~.animation {
-    width: 150px;
-    left: 220px;
-    background-color: green;
-}
-
-nav .start-2,
-a:nth-child(3):hover~.animation {
-    width: 150px;
-    left: 360px;
-    background-color: green;
-}
-
-nav .start-3,
-a:nth-child(4):hover~.animation {
-    width: 150px;
-    left: 500px;
-    background-color: green;
-}
 .imgTS {
     display: none;
     }
