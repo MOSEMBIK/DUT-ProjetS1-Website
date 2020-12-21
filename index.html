@@ -14,78 +14,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
 
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/accueil.css">
-    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="RWD/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="RWD/accueil.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/style.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/accueil.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/accueil.css">
 </head>
 
+
+
+<header>
+    <!-- Barre de navigation par KHADDAN Mohammad & ROUBAHIE-FISSA Gael -->
+    <div id="top">
+        <a href="https://www.iut-rcc.fr/" target="_blank" rel="noopener"><img src="img/logoiut.png" id="logoIUT"></a>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <nav class="nav-sub">
+            <a id="closebtn">&times;</a>
+            <a href="index.html">Accueil</a>
+            <a href="Metiers.html">Les Métiers</a>
+            <a href="Pentester.html">PENTESTER</a>
+            <a href="aPropos.html">A Propos</a>
+            <div class="animation start"></div>
+        </nav>
+    </div>
+
+    <div id="wooper" class="sticky-top">
+        <a id="burger">&#9776;</a>
+        <div id="seperate">
+        </div>
+    </div>
+    <script>
+        let burger = document.getElementById("burger");
+        let closebtn = document.getElementById("closebtn");
+
+        var fullWidth = window.innerWidth;
+        var fullH = window.innerHeight;
+
+        function openNav() {
+            if (fullWidth >= 330) {
+                document.getElementById("mySidenav").style.display = "block";
+            }
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("mySidenav").style.height = "100%";
+        }
+
+        function closeNav() {
+            if (fullWidth >= 330) {
+                document.getElementById("mySidenav").style.display = "none";
+            }
+            document.getElementById("mySidenav").style.width = "0%";
+            document.getElementById("mySidenav").style.height = "0%";
+        }
+
+        burger.addEventListener("click", () => {
+            openNav()
+        })
+        closebtn.addEventListener("click", () => {
+            closeNav()
+        })
+    </script>
+    <div id="wrapper-nav">
+        <nav class="nav-main">
+            <a href="index.html">Accueil</a>
+            <a href="Metiers.html">Les Métiers</a>
+            <a href="Pentester.html">PENTESTER</a>
+            <a href="aPropos.html">A Propos</a>
+            <div class="animation start"></div>
+        </nav>
+    </div>
+</header>
+
 <body onload="typeWriter()">
-
-    <header>
-        <!-- Barre de navigation par KHADDAN Mohammad & ROUBAHIE-FISSA Gael -->
-        <div id="top">
-            <a href="https://www.iut-rcc.fr/" target="_blank" rel="noopener"><img src="img/logoiut.png" id="logoIUT"></a>
-        </div>            
-            
-        <div id="mySidenav" class="sidenav">
-            <nav class="nav-sub">
-                <a id="closebtn">&times;</a>
-                <a href="index.html">Accueil</a>
-                <a href="Metiers.html">Les Métiers</a>
-                <a href="Pentester.html">PENTESTER</a>
-                <a href="aPropos.html">A Propos</a>
-                <div class="animation start"></div>
-            </nav>
-        </div>
-
-        <div id="wooper" class="sticky-top">
-            <a id="burger">&#9776;</a>
-            <div id="seperate">
-            </div>
-        </div>
-        <script>
-            let burger = document.getElementById("burger");
-            let closebtn = document.getElementById("closebtn");
-            
-            var fullWidth = window.innerWidth;
-            var fullH = window.innerHeight;
-
-            function openNav() {
-                if (fullWidth >= 330) {
-                    document.getElementById("mySidenav").style.display = "block";
-                }
-                document.getElementById("mySidenav").style.width = "100%";
-                document.getElementById("mySidenav").style.height = "100%";
-            }
-
-            function closeNav() {
-                if (fullWidth >= 330) {
-                    document.getElementById("mySidenav").style.display = "none";
-                }
-                document.getElementById("mySidenav").style.width = "0%";
-                document.getElementById("mySidenav").style.height = "0%";
-            }
-
-            burger.addEventListener("click", () => {
-                openNav()
-            })
-            closebtn.addEventListener("click", () => {
-                closeNav()
-            })
-        </script>
-        <div id="wrapper-nav">
-            <nav class="nav-main">
-                <a href="index.html">Accueil</a>
-                <a href="Metiers.html">Les Métiers</a>
-                <a href="Pentester.html">PENTESTER</a>
-                <a href="aPropos.html">A Propos</a>
-                <div class="animation start"></div>
-            </nav>
-        </div>
-    </header>
-
     <div class="img-header"></div>
 
     <div class="transition2">
@@ -96,8 +98,8 @@
         <div class="col">
 
             <video controls poster muted preload="metadata">
-                <source src="assets/Cybersecurite pentester - JFMQMP.mp4" type="video/mp4">
-            </video>
+                    <source src="assets/Cybersecurite pentester - JFMQMP.mp4" type="video/mp4">
+                </video>
         </div>
     </div>
 
@@ -161,8 +163,8 @@
     </div>
 
 
-    <div class="row">
-        <div class="col-m-2">
+    <div>
+        <div>
             <p>Le hacking est un phénomène vieux de plusieurs années déjà et qui continue à prendre de l’ampleur. Alors que faire ? Mieux vaut prendre proactivement les choses en main et vérifier la sécurité de toute votre communication. Pour ce faire, utilisez
                 un outil de sécurité automatique.
             </p>
@@ -170,14 +172,6 @@
                 éventualité, mais mieux vaut y être préparé.
             </p>
         </div>
-    </div>
-
-    <div class="divider">
-
-    </div>
-
-    <div id="left-m">
-        <a href="ref/Mentions-legales.html">Mentions Légales</a>
     </div>
 
     <footer id="footer">
