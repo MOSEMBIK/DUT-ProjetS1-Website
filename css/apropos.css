@@ -25,3 +25,16 @@ a:nth-child(4):hover~.animation {
     left: 500px;
     background-color: green;
 }
+
+.container div {
+    text-align: left;
+    margin: 3%;
+}
+
+.container h2 {
+    text-decoration: underline;
+}
+
+.container strong {
+    color: forestgreen;
+}

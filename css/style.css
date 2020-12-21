@@ -41,10 +41,6 @@ body {
     scroll-behavior: smooth;
 }
 
-header {
-    height: 15%;
-}
-
 #logoIUT {
     width: 6%;
     float: left;

@@ -1,432 +1,401 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!-- Header -->
-        <title>CyberSecurité - Les Métiers</title>
-        <link rel="icon" href="img/favicon.ico" />
+    <!-- Header -->
+    <title>CyberSecurité - Les Métiers</title>
+    <link rel="icon" href="img/favicon.ico" />
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="css/ctc.css">
-        <link rel="stylesheet" 
-            href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
-            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" 
-            crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/ctc.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-        <!-- CSS -->
-        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/style.css">
-        <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/style.css">
 
-        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/metier.css">
-        <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/metiers.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/metier.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/metiers.css">
 
-    </head>
+</head>
 
-    <!-- CREDITS -->
-    <!-- Page développée par KHADDAN Mohammad & PELTIER Léonard-->
-    <!-- Groupe 2 INFS1_5B -->
-    <!-- CREDITS -->
-    
-    <body>
-        <header>
-            <!-- Barre de navigation par KHADDAN Mohammad & ROUBAHIE-FISSA Gael -->
-            <div id="top">
-                <a href="https://www.iut-rcc.fr/" target="_blank" rel="noopener"><img src="img/logoiut.png" id="logoIUT"></a>
-            </div>            
-                
-            <div id="mySidenav" class="sidenav">
-                <nav class="nav-sub">
-                    <a id="closebtn">&times;</a>
-                    <a href="index.html">Accueil</a>
-                    <a href="Metiers.html">Les Métiers</a>
-                    <a href="Pentester.html">PENTESTER</a>
-                    <a href="aPropos.html">A Propos</a>
-                    <div class="animation start"></div>
-                </nav>
+<!-- CREDITS -->
+<!-- Page développée par KHADDAN Mohammad & PELTIER Léonard-->
+<!-- Groupe 2 INFS1_5B -->
+<!-- CREDITS -->
+
+<body>
+    <header>
+        <!-- Barre de navigation par KHADDAN Mohammad & ROUBAHIE-FISSA Gael -->
+        <div id="top">
+            <a href="https://www.iut-rcc.fr/" target="_blank" rel="noopener"><img src="img/logoiut.png" id="logoIUT"></a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <nav class="nav-sub">
+                <a id="closebtn">&times;</a>
+                <a href="index.html">Accueil</a>
+                <a href="Metiers.html">Les Métiers</a>
+                <a href="Pentester.html">PENTESTER</a>
+                <a href="aPropos.html">À Propos</a>
+                <div class="animation start"></div>
+            </nav>
+        </div>
+
+        <div id="wooper" class="sticky-top">
+            <a id="burger">&#9776;</a>
+            <div id="seperate">
             </div>
+        </div>
+        <script>
+            let burger = document.getElementById("burger");
+            let closebtn = document.getElementById("closebtn");
 
-            <div id="wooper" class="sticky-top">
-                <a id="burger">&#9776;</a>
-                <div id="seperate">
-                </div>
-            </div>
-            <script>
-                let burger = document.getElementById("burger");
-                let closebtn = document.getElementById("closebtn");
-                
-                var fullWidth = window.innerWidth;
-                var fullH = window.innerHeight;
+            var fullWidth = window.innerWidth;
+            var fullH = window.innerHeight;
 
-                function openNav() {
-                    if (fullWidth >= 330) {
-                        document.getElementById("mySidenav").style.display = "block";
-                    }
-                    document.getElementById("mySidenav").style.width = "100%";
-                    document.getElementById("mySidenav").style.height = "100%";
+            function openNav() {
+                if (fullWidth >= 330) {
+                    document.getElementById("mySidenav").style.display = "block";
                 }
+                document.getElementById("mySidenav").style.width = "100%";
+                document.getElementById("mySidenav").style.height = "100%";
+            }
 
-                function closeNav() {
-                    if (fullWidth >= 330) {
-                        document.getElementById("mySidenav").style.display = "none";
-                    }
-                    document.getElementById("mySidenav").style.width = "0%";
-                    document.getElementById("mySidenav").style.height = "0%";
+            function closeNav() {
+                if (fullWidth >= 330) {
+                    document.getElementById("mySidenav").style.display = "none";
                 }
+                document.getElementById("mySidenav").style.width = "0%";
+                document.getElementById("mySidenav").style.height = "0%";
+            }
 
-                burger.addEventListener("click", () => {
-                    openNav()
-                })
-                closebtn.addEventListener("click", () => {
-                    closeNav()
-                })
-            </script>
-            <div id="wrapper-nav">
-                <nav class="nav-main">
-                    <a href="index.html">Accueil</a>
-                    <a href="Metiers.html">Les Métiers</a>
-                    <a href="Pentester.html">PENTESTER</a>
-                    <a href="aPropos.html">A Propos</a>
-                    <div class="animation start"></div>
-                </nav>
+            burger.addEventListener("click", () => {
+                openNav()
+            })
+            closebtn.addEventListener("click", () => {
+                closeNav()
+            })
+        </script>
+        <div id="wrapper-nav">
+            <nav class="nav-main">
+                <a href="index.html">Accueil</a>
+                <a href="Metiers.html">Les Métiers</a>
+                <a href="Pentester.html">PENTESTER</a>
+                <a href="aPropos.html">À Propos</a>
+                <div class="animation start"></div>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <!-- Par KHADDAN Mohammad -->
+        <!-- CODE -->
+
+        <h1 id="pageTitle" class="col-xl-6">Les Métiers de la CyberSecurité</h1>
+
+        <!-- DIV BACKGROUND -->
+        <img id="MABckgnd" src="img/MABckgnd.png">
+        <script>
+            let MABckgnd = document.getElementById("MABckgnd")
+        </script>
+
+        <!-- DIV METIER ABOUT -->
+        <div id="MTechSuppAbout" class="MAbout">
+            <button id="MTechSuppAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <h2>
+                Technicien support
+            </h2>
+            <p class="txtp">
+                <a>Etudes :</a> Bac +1 (Maintenicien informatique et réseaux) <br> Bac +2 (DUT Informatique) <br> Bac +3 (BUT Réseaux et télécommunications)
+                <br>
+                <a>Salaire moyen :</a> 24 000€/an (brut)
+            </p>
+            <p>
+                Le Technicien support est l'homme à tout faire d'un service informatique. Ses compétances se doivent d'être larges. Ses missions comprennent tout ce qui pose problème aux utilisateurs du service et met en danger l'integriter de celui-ci. Il peut être
+                chargé du dépanage d'une machine au niveau du materiel comme au niveau logiciel.
+                <br> Lorsque le technicien travail dans une entreprise, un établissement scolaire, il est chargé de la gestion et de la maintenance, de former les utilisateurs, les aider à aprehender un nouveau logiciel, de conseiller sur les possibles
+                amélioration et installation du matériel, ...
+                <br> Les horraires et les conditions de travail du technicien sont en général assez lourdes.
+            </p>
+            <p class="link">
+                Plus d'info sur <a href="https://cutt.ly/TechSupp" target="_blank" rel="noopener">le site de l'ONISEP</a>.
+            </p>
+        </div>
+
+        <div id="MPentesterAbout" class="MAbout">
+            <button id="MPentesterAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <h2>
+                Pentester
+            </h2>
+            <p class="txtp">
+                <a>Etudes :</a> Bac +5 (Diplome d'ingénieur) <br> Bac +6 (Master spé. CyberSecurité)
+                <br>
+                <a>Salaire moyen :</a> 36 000€/an (brut)
+            </p>
+            <p>
+                Le Pentester est l'ennemi des virus et des hackers. Son travail consiste à devancer les potenciels acteurs malveillants en leur coupant l'herbe sous le pied. Il doit à tout prix trouver les failles du système dont il est en charge avant ses adversaire
+                et refermer ces trous.
+                <br> Protéger un système informatique n'est pas de tout repos, il faut toujours être à jours pour protéger au mieux le système.
+            </p>
+            <p class="link">
+                Plus d'info sur <a href="https://cutt.ly/Pentester" target="_blank" rel="noopener">le site de l'ONISEP</a>.
+                <br> Ou sur <a href="Pentester.html">notre page dédiée</a> à l'interview d'un Pentester !
+            </p>
+        </div>
+
+        <div id="MAnalysteAbout" class="MAbout">
+            <button id="MAnalysteAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <h2>
+                Analyste
+            </h2>
+            <p class="txtp">
+                <a>Etudes :</a> Bac +3 (Licence Informatique) + Expérience <br> Bac +5 (Diplome d'ingénieur)
+                <br>
+                <a>Salaire moyen :</a> 29 000€/an
+            </p>
+            <p>
+                L'Analyste (ou analyste S.O.C) est celui qui assure la sécurité des entreprises et de ses collaborateurs face aux menaces. Le metier est assez proche de celui de pentester et les cursus à suivre sont assez similaires. Là ou le pentester attaque ses propres
+                système pour prévenir les attaques malveillantes, l'analyste est chargé de conseiller et de tenter de prévoir les moments ou l'entreprise est le plus suceptible de se faire attaquer.
+            </p>
+            <p class="link">
+                Plus d'info sur <a href="https://cutt.ly/Analyste" target="_blank" rel="noopener">cidj.com #InfoJeunesse</a>.
+            </p>
+        </div>
+
+        <div id="MInteAbout" class="MAbout">
+            <button id="MInteAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <h2>
+                Intégrateur
+            </h2>
+            <p class="txtp">
+                <a>Etudes :</a> Bac +3 (Licence Informatique) + Expérience <br> à <br> Bac +5 (Diplome d'ingénieur)
+                <br>
+                <a>Salaire moyen :</a> 40 000€/an (brut)
+            </p>
+            <p>
+                L'Intégrateur de solution de sécurité et la personne qui, au sein d'une organisation, et chargé de choisir les solutions les plus adaptées au problématiques de l'entreprise tout en assurant la sécurité de ces système.
+                <br> Il est notamment chargé de choisir et de maintenir les systèmes et leur architechture et de les intégrer dans l'environement de production de l'organisation qui l'emploi.
+            </p>
+            <p class="link">
+                Plus d'info sur <a href="https://cutt.ly/Integrateur" target="_blank" rel="noopener">la documentation de l'ANSSI</a>.
+            </p>
+        </div>
+
+        <div id="MDevAbout" class="MAbout">
+            <button id="MDevAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <h2>
+                Developpeur
+            </h2>
+            <p class="txtp">
+                <a>Etudes :</a> Bac +2 (DUT Informatique) <br> à <br> Bac +6 (Master spé. Technologie du web et cybersécurité)
+                <br>
+                <a>Salaire moyen :</a> 29 000€/an (brut)
+            </p>
+            <p>
+                Le Developpeur est au front face à la cybermalveillance. Il se doit de programmer en faisant bien attention à ne laisser aucune faille dans son code. Lorsqu'il travail sur un projet grand public comme sur un projet privé interne à une entreprise, si son
+                application se fait hacker, il est le premier fautif si il a négliger la sécurité de son programme.
+                <br> Avec les nouvelles technologie d'assistance à la programation, aujourd'hui les développeurs ont de plus en plus un role d'analyste des programmes pour certifier leur integrité et leur sécurité.
+            </p>
+            <p class="link">
+                Plus d'info sur <a href="https://cutt.ly/Developper" target="_blank" rel="noopener">le site de l'ONISEP</a>.
+            </p>
+        </div>
+
+
+        <!-- New Div METIER -->
+        <div class="inline">
+            <div id="TechSupp" class="metier">
+                <a id="MTechSupp">
+                    <div>
+                        <h2>
+                            Technicien support
+                        </h2>
+                        <p>
+                            Responsable des systèmes informatiques.
+                            <br> Administre, gère et maintient la sécurité et la gestion des réseaux.
+                        </p>
+                    </div>
+                </a>
             </div>
-        </header>
+            <div class="imgTS"></div>
+        </div>
+        <script>
+            let BtnTechSup = document.getElementById("MTechSupp");
+            let DivTechSuppAbout = document.getElementById("MTechSuppAbout");
+            let DTSAExitBtn = document.getElementById("MTechSuppAboutExit")
 
-        <div>
-            <!-- Par KHADDAN Mohammad -->
-            <!-- CODE -->
+            BtnTechSup.addEventListener("click", () => {
+                DivTechSuppAbout.style.display = "block"
+                DivTechSuppAbout.style.position = "absolute"
+                MABckgnd.style.display = "block"
+                MABckgnd.style.position = "fixed"
+            })
+            DTSAExitBtn.addEventListener("click", () => {
+                DivTechSuppAbout.style.display = "none"
+                MABckgnd.style.display = "none"
+            })
+        </script>
 
-            <h1  id="pageTitle" class="col-xl-6">Les Métiers de la CyberSecurité</h1>
-
-            <!-- DIV BACKGROUND -->
-            <img id="MABckgnd" src="img/MABckgnd.png">
-            <script>
-                let MABckgnd = document.getElementById("MABckgnd")
-            </script>
-
-            <!-- DIV METIER ABOUT -->
-            <div id="MTechSuppAbout" class="MAbout">
-                <button id="MTechSuppAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
-                <h2>
-                    Technicien support
-                </h2>
-                <p class="txtp">
-                    <a>Etudes :</a> Bac +1 (Maintenicien informatique et réseaux) <br> Bac +2 (DUT Informatique) <br> Bac +3 (BUT Réseaux et télécommunications)
-                    <br>
-                    <a>Salaire moyen :</a> 24 000€/an (brut)
-                </p>
-                <p>
-                    Le Technicien support est l'homme à tout faire d'un service informatique. Ses compétances se doivent d'être larges. Ses missions comprennent tout ce 
-                    qui pose problème aux utilisateurs du service et met en danger l'integriter de celui-ci. Il peut être chargé du dépanage d'une machine au niveau du 
-                    materiel comme au niveau logiciel.
-                    <br>
-                    Lorsque le technicien travail dans une entreprise, un établissement scolaire, il est chargé de la gestion et de la maintenance, de former les 
-                    utilisateurs, les aider à aprehender un nouveau logiciel, de conseiller sur les possibles amélioration et installation du matériel, ...
-                    <br>
-                    Les horraires et les conditions de travail du technicien sont en général assez lourdes.
-                </p>
-                <p class="link">
-                    Plus d'info sur <a href="https://cutt.ly/TechSupp" target="_blank" rel="noopener">le site de l'ONISEP</a>.
-                </p>
+        <!-- New Div METIER -->
+        <div id="ILPent" class="inline">
+            <div class="imgPent"></div>
+            <div id="Pent" class="metier">
+                <a id="MPentester">
+                    <div>
+                        <h2>
+                            Pentester
+                        </h2>
+                        <p>
+                            S'attaquer soi même pour mieux se proteger.
+                            <br> Pénétre les systèmes informatiques, en identifie les failles et résout les possibles chemins d'intrusions.
+                        </p>
+                    </div>
+                </a>
             </div>
-            
-            <div id="MPentesterAbout" class="MAbout">
-                <button id="MPentesterAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
-                <h2>
-                    Pentester
-                </h2>
-                <p class="txtp">
-                    <a>Etudes :</a> Bac +5 (Diplome d'ingénieur) <br> Bac +6 (Master spé. CyberSecurité)
-                    <br>
-                    <a>Salaire moyen :</a> 36 000€/an (brut)
-                </p>
-                <p>
-                    Le Pentester est l'ennemi des virus et des hackers. Son travail consiste à devancer les potenciels acteurs malveillants en
-                    leur coupant l'herbe sous le pied. Il doit à tout prix trouver les failles du système dont il est en charge avant ses 
-                    adversaire et refermer ces trous.
-                    <br>
-                    Protéger un système informatique n'est pas de tout repos, il faut toujours être à jours pour protéger au mieux le système. 
-                </p>
-                <p class="link">
-                    Plus d'info sur <a href="https://cutt.ly/Pentester" target="_blank" rel="noopener">le site de l'ONISEP</a>.
-                    <br>
-                    Ou sur <a href="Pentester.html">notre page dédiée</a> à l'interview d'un Pentester !
-                </p>
+        </div>
+        <script>
+            let BtnPentester = document.getElementById("MPentester");
+            let DivPentesterAbout = document.getElementById("MPentesterAbout");
+            let DPtstAExitBtn = document.getElementById("MPentesterAboutExit")
+
+            BtnPentester.addEventListener("click", () => {
+                DivPentesterAbout.style.display = "block"
+                DivPentesterAbout.style.position = "absolute"
+                MABckgnd.style.display = "block"
+                MABckgnd.style.position = "absolute"
+            })
+            DPtstAExitBtn.addEventListener("click", () => {
+                DivPentesterAbout.style.display = "none"
+                MABckgnd.style.display = "none"
+            })
+        </script>
+
+        <!-- New Div METIER -->
+        <div class="inline">
+            <div id="Anal" class="metier">
+                <a id="MAnalyste">
+                    <div>
+                        <h2>
+                            Analyste
+                        </h2>
+                        <p>
+                            Anticiper et prévoir les moments critiques.
+                            <br> Conseil et gère la prévention des possibles moments de fragilité d'une entreprise et de ses systèmes d'information internes.
+                        </p>
+                    </div>
+                </a>
             </div>
-            
-            <div id="MAnalysteAbout" class="MAbout">
-                <button id="MAnalysteAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
-                <h2>
-                    Analyste
-                </h2>
-                <p class="txtp">
-                    <a>Etudes :</a> Bac +3 (Licence Informatique) + Expérience <br> Bac +5 (Diplome d'ingénieur)
-                    <br>
-                    <a>Salaire moyen :</a> 29 000€/an
-                </p>
-                <p>
-                    L'Analyste (ou analyste S.O.C) est celui qui assure la sécurité des entreprises et de ses collaborateurs face aux menaces.
-                    Le metier est assez proche de celui de pentester et les cursus à suivre sont assez similaires. Là ou le pentester attaque ses propres
-                    système pour prévenir les attaques malveillantes, l'analyste est chargé de conseiller et de tenter de prévoir les moments ou 
-                    l'entreprise est le plus suceptible de se faire attaquer.
-                </p>
-                <p class="link">
-                    Plus d'info sur <a href="https://cutt.ly/Analyste" target="_blank" rel="noopener">cidj.com #InfoJeunesse</a>.
-                </p>
+            <div class="imgAnal"></div>
+        </div>
+        <script>
+            let BtnAnalyste = document.getElementById("MAnalyste");
+            let DivAnalysteAbout = document.getElementById("MAnalysteAbout");
+            let DAnlExitBtn = document.getElementById("MAnalysteAboutExit")
+
+            BtnAnalyste.addEventListener("click", () => {
+                DivAnalysteAbout.style.display = "block"
+                DivAnalysteAbout.style.position = "absolute"
+                MABckgnd.style.display = "block"
+                MABckgnd.style.position = "fixed"
+            })
+            DAnlExitBtn.addEventListener("click", () => {
+                DivAnalysteAbout.style.display = "none"
+                MABckgnd.style.display = "none"
+            })
+        </script>
+
+        <!-- New Div METIER -->
+        <div id="ILInte" class="inline">
+            <div class="imgInte"></div>
+            <div id="Inte" class="metier">
+                <a id="MInte">
+                    <div>
+                        <h2>
+                            Intégrateur
+                        </h2>
+                        <p>
+                            Analyser les risques et mettre en place une structure de réseau fiable et sécurisée.
+                            <br> Intégre le système informatique au coeur du processus de production de l'entreprise.
+                        </p>
+                    </div>
+                </a>
             </div>
-            
-            <div id="MInteAbout" class="MAbout">
-                <button id="MInteAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
-                <h2>
-                    Intégrateur
-                </h2>
-                <p class="txtp">
-                    <a>Etudes :</a> Bac +3 (Licence Informatique) + Expérience <br> à <br> Bac +5 (Diplome d'ingénieur)
-                    <br>
-                    <a>Salaire moyen :</a> 40 000€/an (brut)
-                </p>
-                <p>
-                    L'Intégrateur de solution de sécurité et la personne qui, au sein d'une organisation, et chargé de choisir les solutions
-                    les plus adaptées au problématiques de l'entreprise tout en assurant la sécurité de ces système.
-                    <br>
-                    Il est notamment chargé de choisir et de maintenir les systèmes et leur architechture et de les intégrer dans l'environement
-                    de production de l'organisation qui l'emploi.
-                </p>
-                <p class="link">
-                    Plus d'info sur <a href="https://cutt.ly/Integrateur" target="_blank" rel="noopener">la documentation de l'ANSSI</a>.
-                </p>
+        </div>
+        <script>
+            let BtnInte = document.getElementById("MInte");
+            let DivInteAbout = document.getElementById("MInteAbout");
+            let DInteExitBtn = document.getElementById("MInteAboutExit")
+
+            BtnInte.addEventListener("click", () => {
+                DivInteAbout.style.display = "block"
+                DivInteAbout.style.position = "absolute"
+                MABckgnd.style.display = "block"
+                MABckgnd.style.position = "fixed"
+            })
+            DInteExitBtn.addEventListener("click", () => {
+                DivInteAbout.style.display = "none"
+                MABckgnd.style.display = "none"
+            })
+        </script>
+
+        <!-- New Div METIER -->
+        <div class="inline">
+            <div id="Dev" class="metier">
+                <a id="MDev">
+                    <div>
+                        <h2>
+                            Developpeur
+                        </h2>
+                        <p>
+                            Programmer, analyser et sécuriser le code de ses programmes.
+                            <br> Répond à des besoins spécifiques via une automatisation des programmes et assure la digitalisation des services internes de l'entreprise.
+                        </p>
+                    </div>
+                </a>
             </div>
-            
-            <div id="MDevAbout" class="MAbout">
-                <button id="MDevAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
-                <h2>
-                    Developpeur
-                </h2>
-                <p class="txtp">
-                    <a>Etudes :</a> Bac +2 (DUT Informatique) <br> à <br> Bac +6 (Master spé. Technologie du web et cybersécurité)
-                    <br>
-                    <a>Salaire moyen :</a> 29 000€/an (brut)
-                </p>
-                <p>
-                    Le Developpeur est au front face à la cybermalveillance. Il se doit de programmer en faisant bien attention à ne laisser aucune
-                    faille dans son code. Lorsqu'il travail sur un projet grand public comme sur un projet privé interne à une entreprise, si son 
-                    application se fait hacker, il est le premier fautif si il a négliger la sécurité de son programme.
-                    <br>
-                    Avec les nouvelles technologie d'assistance à la programation, aujourd'hui les développeurs ont de plus en plus un role d'analyste
-                    des programmes pour certifier leur integrité et leur sécurité.
-                </p>
-                <p class="link">
-                    Plus d'info sur <a href="https://cutt.ly/Developper" target="_blank" rel="noopener">le site de l'ONISEP</a>.
-                </p>
-            </div>
+            <div class="imgDev"></div>
+        </div>
+        <script>
+            let BtnDev = document.getElementById("MDev");
+            let DivDevAbout = document.getElementById("MDevAbout");
+            let DDevExitBtn = document.getElementById("MDevAboutExit")
+
+            BtnDev.addEventListener("click", () => {
+                DivDevAbout.style.display = "block"
+                DivDevAbout.style.position = "absolute"
+                MABckgnd.style.display = "block"
+                MABckgnd.style.position = "fixed"
+            })
+            DDevExitBtn.addEventListener("click", () => {
+                DivDevAbout.style.display = "none"
+                MABckgnd.style.display = "none"
+            })
+        </script>
+
+        <!-- CODE -->
+
+        <!-- ----------------------------------------------------- -->
+        <!-- ----------------------------------------------------- -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+        </script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+        </script>
+    </div>
 
 
-            <!-- New Div METIER -->
-            <div class="inline">
-                <div id="TechSupp" class="metier">
-                    <a id="MTechSupp">
-                        <div>
-                            <h2>
-                                Technicien support
-                            </h2>
-                            <p>
-                                Responsable des systèmes informatiques. 
-                                <br>
-                                Administre, gère et maintient la sécurité et la gestion des réseaux.
-                            </p>                    
-                        </div>
-                    </a>
-                </div>
-                <div class="imgTS"></div>
-            </div>
-            <script>
-                let BtnTechSup = document.getElementById("MTechSupp");
-                let DivTechSuppAbout = document.getElementById("MTechSuppAbout");
-                let DTSAExitBtn = document.getElementById("MTechSuppAboutExit")
-                
-                BtnTechSup.addEventListener("click", () => {
-                    DivTechSuppAbout.style.display = "block"
-                    DivTechSuppAbout.style.position = "absolute"
-                    MABckgnd.style.display = "block"
-                    MABckgnd.style.position = "fixed"
-                })
-                DTSAExitBtn.addEventListener("click", () => {
-                    DivTechSuppAbout.style.display = "none"
-                    MABckgnd.style.display = "none"
-                })
-            </script>
-
-            <!-- New Div METIER -->
-            <div id="ILPent" class="inline">
-                <div class="imgPent"></div>
-                <div id="Pent" class="metier">
-                    <a id="MPentester">
-                        <div>
-                            <h2>
-                                Pentester
-                            </h2>
-                            <p>
-                                S'attaquer soi même pour mieux se proteger.
-                                <br>
-                                Pénétre les systèmes informatiques, en identifie les failles et résout les possibles chemins
-                                d'intrusions.
-                            </p>                    
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <script>
-                let BtnPentester = document.getElementById("MPentester");
-                let DivPentesterAbout = document.getElementById("MPentesterAbout");
-                let DPtstAExitBtn = document.getElementById("MPentesterAboutExit")
-
-                BtnPentester.addEventListener("click", () => {
-                    DivPentesterAbout.style.display = "block"
-                    DivPentesterAbout.style.position = "absolute"
-                    MABckgnd.style.display = "block"
-                    MABckgnd.style.position = "absolute"
-                })
-                DPtstAExitBtn.addEventListener("click", () => {
-                    DivPentesterAbout.style.display = "none"
-                    MABckgnd.style.display = "none"
-                })
-            </script>
-
-            <!-- New Div METIER -->
-            <div class="inline">
-                <div id="Anal" class="metier">
-                    <a id="MAnalyste">
-                        <div>
-                            <h2>
-                                Analyste
-                            </h2>
-                            <p>
-                                Anticiper et prévoir les moments critiques.
-                                <br>
-                                Conseil et gère la prévention des possibles moments de fragilité d'une entreprise et
-                                de ses systèmes d'information internes.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="imgAnal"></div>            
-            </div>
-            <script>
-                let BtnAnalyste = document.getElementById("MAnalyste");
-                let DivAnalysteAbout = document.getElementById("MAnalysteAbout");
-                let DAnlExitBtn = document.getElementById("MAnalysteAboutExit")
-                
-                BtnAnalyste.addEventListener("click", () => {
-                    DivAnalysteAbout.style.display = "block"
-                    DivAnalysteAbout.style.position = "absolute"
-                    MABckgnd.style.display = "block"
-                    MABckgnd.style.position = "fixed"
-                })
-                DAnlExitBtn.addEventListener("click", () => {
-                    DivAnalysteAbout.style.display = "none"
-                    MABckgnd.style.display = "none"
-                })
-            </script>
-
-            <!-- New Div METIER -->
-            <div id="ILInte" class="inline">
-                <div class="imgInte"></div> 
-                <div id="Inte" class="metier">
-                    <a id="MInte">
-                        <div>
-                            <h2>
-                                Intégrateur
-                            </h2>
-                            <p>
-                                Analyser les risques et mettre en place une structure de réseau fiable et sécurisée.
-                                <br>
-                                Intégre le système informatique au coeur du processus de production de l'entreprise.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <script>
-                let BtnInte = document.getElementById("MInte");
-                let DivInteAbout = document.getElementById("MInteAbout");
-                let DInteExitBtn = document.getElementById("MInteAboutExit")
-                
-                BtnInte.addEventListener("click", () => {
-                    DivInteAbout.style.display = "block"
-                    DivInteAbout.style.position = "absolute"
-                    MABckgnd.style.display = "block"
-                    MABckgnd.style.position = "fixed"
-                })
-                DInteExitBtn.addEventListener("click", () => {
-                    DivInteAbout.style.display = "none"
-                    MABckgnd.style.display = "none"
-                })
-            </script>
-
-            <!-- New Div METIER -->
-            <div class="inline">
-                <div id="Dev" class="metier">
-                    <a id="MDev">
-                        <div>
-                            <h2>
-                                Developpeur
-                            </h2>
-                            <p>
-                                Programmer, analyser et sécuriser le code de ses programmes.
-                                <br>
-                                Répond à des besoins spécifiques via une automatisation des programmes et assure la digitalisation des
-                                services internes de l'entreprise.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="imgDev"></div> 
-            </div>
-            <script>
-                let BtnDev = document.getElementById("MDev");
-                let DivDevAbout = document.getElementById("MDevAbout");
-                let DDevExitBtn = document.getElementById("MDevAboutExit")
-                
-                BtnDev.addEventListener("click", () => {
-                    DivDevAbout.style.display = "block"
-                    DivDevAbout.style.position = "absolute"
-                    MABckgnd.style.display = "block"
-                    MABckgnd.style.position = "fixed"
-                })
-                DDevExitBtn.addEventListener("click", () => {
-                    DivDevAbout.style.display = "none"
-                    MABckgnd.style.display = "none"
-                })
-            </script>
-
-            <!-- CODE -->
-
-            <!-- ----------------------------------------------------- -->
-            <!-- ----------------------------------------------------- -->
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script 
-                src="https://code.jquery.com/jquery-1.12.4.min.js" 
-                integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
-                crossorigin="anonymous">
-            </script>
-
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script 
-                src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" 
-                crossorigin="anonymous">
-            </script>
-            </div>
-        
-        
-        <footer id="footer">
-            Credits &copy; IUT RCC
-            <span id="foot-lt"><a href="#top">&uarr;</a></span> 
-        </footer>
-    </body>
+    <footer id="footer">
+        Credits &copy; IUT RCC
+        <span id="foot-lt"><a href="#top">&uarr;</a></span>
+    </footer>
+</body>
 
 </html>
