@@ -14,3 +14,8 @@
 .container strong {
     color: forestgreen;
 }
+
+p .pagesT {
+    text-decoration: underline;
+    color: gray;
+}
