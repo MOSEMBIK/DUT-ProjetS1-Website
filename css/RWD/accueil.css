@@ -1,3 +1,9 @@
+* {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
 dt {
     font-size: 20px
 }
@@ -11,17 +17,12 @@ dd {
     height: 30%;
 }
 
-#transition1 {
-    font-size: 30px;
-}
 
-video {
-    width: 80%;
-    height: 80%;
-}
 
 #graphic1 {
-    width: 60%;
+    margin-top: 20px;
+    width: 80%;
+    height: 70%;
 }
 
 #graphic2 {
@@ -29,14 +30,6 @@ video {
     padding: 20px;
 }
 
-#cyber {
-    font-size: 11px;
-}
-
-#cyber1 {
-    font-size: 10px;
-    font-weight: bold;
-}
 
 .col-m-4 {
     display: inline-block;
@@ -50,12 +43,11 @@ video {
     margin-bottom: 20px;
 }
 
-.transition {
-    height: 35%;
-}
 
 #pentester {
     font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 a:hover,
@@ -66,4 +58,65 @@ a:active {
 
 .col-m-2 {
     font-size: 11px;
+}
+@media screen and (max-width: 990px) {
+    #graphic1 {
+        display: none;
+    }
+}
+
+iframe {
+    height: 300px;
+    max-width: 80%;
+}
+
+
+
+#transition1 {
+    margin-top: 1em;
+    font-family: 'Gameplay';
+    font-weight: bolder;
+    font-size: 3em;
+    text-align: center;
+    color: forestgreen;
+    margin-bottom: 1em;
+}
+
+.transition2 {
+    margin-bottom: 2em;
+    background-image: url(../1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%
+}
+.box {
+    margin: auto;
+}
+#space {
+    margin-top: 1em;
+    margin-bottom: 50px;
+}
+#link {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.col {
+    max-width: 100%;
+}
+#video-player-wrapper {
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 2em;
+}
+@font-face {
+    font-family: 'Gameplay';
+    src: url(../../assets/Gameplay.ttf) format('truetype');
+}
+h2 {
+    margin-bottom: 2rem;
+}
+#questions {
+    margin-top: 150em;
 }

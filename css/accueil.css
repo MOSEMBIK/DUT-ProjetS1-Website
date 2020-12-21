@@ -31,9 +31,7 @@ a:nth-child(4):hover~.animation {
 }
 
 .img-header {
-    background-image: url(../computer-hacking-code.jpg);
     z-index: 1000;
-    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +49,7 @@ a:nth-child(4):hover~.animation {
     font-size: 3em;
     text-align: center;
     color: forestgreen;
-    margin-bottom: 3em;
+    margin-bottom: -10%;
 }
 
 .transition2 {
@@ -93,7 +91,7 @@ a:nth-child(4):hover~.animation {
 #video-player-wrapper {
     width: 100%;
     min-height: 120px;
-    margin-bottom: 200px;
+    margin-bottom: 2em;
 }
 
 video {
@@ -106,10 +104,11 @@ a {
     text-shadow: 2px 2px black;
 }
 
-#pentester {
+h1#pentester {
     text-align: center;
     font-weight: bolder;
     font-size: 60px;
+    margin: 2em 0 2em 0
 }
 
 #foot-rt {
@@ -172,3 +171,23 @@ dd {
     margin-bottom: 20px;
 }
 
+h2 {
+    margin-bottom: 2rem;
+}
+
+#questions {
+    margin: 2em 0 2em 0;
+}
+
+.box {
+    margin: auto;
+}
+
+.space {
+    margin-top: 1em;
+}
+
+#link {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
