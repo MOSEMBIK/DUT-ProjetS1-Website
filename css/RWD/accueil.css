@@ -1,0 +1,214 @@
+@media screen and (max-width: 1024px) {
+    #wooper {
+        display: inline-block;
+        background: #34495e;
+        padding: auto;
+        margin: auto;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        margin-right: 20%;
+        margin-left: 3%;
+    }
+    dt {
+        font-size: 20px
+    }
+    dd {
+        font-size: 10px;
+        display: inline-block;
+    }
+    #wrapper-col {
+        font-size: 11px;
+    }
+    .form {
+        height: 30%;
+    }
+    #transition1 {
+        font-size: 30px;
+    }
+    video {
+        width: 80%;
+        height: 80%;
+    }
+    #graphic1 {
+        width: 60%;
+    }
+    #graphic2 {
+        margin-right: 20px;
+        padding: 20px;
+    }
+    #cyber {
+        font-size: 11px;
+    }
+    #cyber1 {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .col-m-4 {
+        display: inline-block;
+        font-size: 13px;
+    }
+    #seperate {
+        display: initial;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .transition {
+        height: 35%;
+    }
+    #pentester {
+        font-size: 2em;
+    }
+    #wrapper-nav {
+        display: none;
+    }
+    .searchTerm {
+        display: none;
+    }
+    .searchButton {
+        margin-left: 140px;
+    }
+    .nav-sub {
+        background: none;
+    }
+    .nav-sub a {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+        z-index: 1;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    .nav-sub .animation {
+        position: absolute;
+        height: 100%;
+        z-index: 0;
+        transition: all .5s ease 0s;
+        border-radius: 80px;
+    }
+    a:nth-child(1) {
+        width: 20px;
+    }
+    a:nth-child(2) {
+        width: 70px;
+    }
+    a:nth-child(3) {
+        width: 60px;
+    }
+    a:nth-child(4) {
+        width: 60px;
+    }
+    a:nth-child(5) {
+        width: 60px;
+    }
+    .nav-sub .start,
+    .nav-sub a:nth-child(1):hover~.animation {
+        width: 150px;
+        height: 30px;
+        left: 0;
+        top: 0px;
+        background-color: green;
+    }
+    .nav-sub .start-1,
+    .sidenav a:nth-child(2):hover~.animation {
+        width: 150px;
+        top: 0px;
+        left: 0;
+        background-color: #232B2B;
+    }
+    .nav-sub .start-2,
+    .sidenav a:nth-child(3):hover~.animation {
+        width: 150px;
+        left: 0;
+        height: 45px;
+        top: 45px;
+        background-color: green;
+    }
+    .nav-sub .start-3,
+    .sidenav a:nth-child(4):hover~.animation {
+        width: 150px;
+        height: 30px;
+        top: 100px;
+        left: 0;
+        background-color: #232B2B;
+    }
+    .nav-sub .start-4,
+    .sidenav a:nth-child(5):hover~.animation {
+        width: 100px;
+        height: 40px;
+        top: 130px;
+        left: 10px;
+        background-color: green;
+    }
+    a:hover,
+    a:active {
+        color: white;
+        text-decoration: none;
+    }
+    .col-m-2 {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:1420px) {
+    #footer {
+        font-size: 12px;
+    }
+    #left-m {
+        font-size: 12px;
+    }
+    #cyber {
+        font-size: 12px;
+    }
+    #mySidenav {
+        display: none;
+    }
+    #wooper {
+        margin: 0;
+        width: 50%;
+    }
+    .transition {
+        height: 110px;
+    }
+    .nav-sub .start,
+    .nav-sub a:nth-child(1):hover~.animation {
+        width: 150px;
+        height: 30px;
+        left: 0;
+        top: 15px;
+        background-color: green;
+    }
+    .nav-sub .start-1,
+    .nav-sub a:nth-child(2):hover~.animation {
+        width: 150px;
+        top: 17px;
+        left: 0;
+        background-color: #232B2B;
+    }
+    .nav-sub .start-2,
+    .nav-sub a:nth-child(3):hover~.animation {
+        width: 150px;
+        left: 0;
+        height: 45px;
+        top: 60px;
+        background-color: green;
+    }
+    .nav-sub .start-3,
+    .nav-sub a:nth-child(4):hover~.animation {
+        width: 150px;
+        height: 30px;
+        top: 115px;
+        left: 0;
+        background-color: #232B2B;
+    }
+    .nav-sub .start-4,
+    .nav-sub a:nth-child(5):hover~.animation {
+        width: 100px;
+        height: 40px;
+        top: 150px;
+        left: 10px;
+        background-color: green;
+    }
+}

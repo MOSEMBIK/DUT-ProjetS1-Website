@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Header -->
     <title>Accueil</title>
-    <link rel="icon" href="img/favicon.ico" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
 
-    <!-- CSS -->
-    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/RWD/style.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="RWD/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="RWD/accueil.css">
+</head>
 
-  </head>
+<body onload="typeWriter()">
 
-  <header>
+    <header>
         <!-- Barre de navigation par KHADDAN Mohammad & ROUBAHIE-FISSA Gael -->
         <div id="top">
             <a href="https://www.iut-rcc.fr/" target="_blank" rel="noopener"><img src="img/logoiut.png" id="logoIUT"></a>
@@ -31,7 +33,7 @@
             <nav class="nav-sub">
                 <a id="closebtn">&times;</a>
                 <a href="index.html">Accueil</a>
-                <a href="Metiers.html">Les Metiers</a>
+                <a href="Metiers.html">Les Métiers</a>
                 <a href="Pentester.html">PENTESTER</a>
                 <a href="aPropos.html">A Propos</a>
                 <div class="animation start"></div>
@@ -76,189 +78,126 @@
         <div id="wrapper-nav">
             <nav class="nav-main">
                 <a href="index.html">Accueil</a>
-                <a href="Metiers.html">Les Metiers</a>
+                <a href="Metiers.html">Les Métiers</a>
                 <a href="Pentester.html">PENTESTER</a>
                 <a href="aPropos.html">A Propos</a>
                 <div class="animation start"></div>
             </nav>
         </div>
-    </header>   
+    </header>
 
-    <body onload="typeWriter()">
-        <div class="row" id="video-player-wrapper">
-            <div class="col-xs-6">
-                <h2>Voici la vidéo originale qui a inspiré la création de ce site</h2>
-                <p>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        &#9658;
-                    </button>
-                </p>
-                <div class="collapse" id="collapseExample">
-                    <div class="card-body">
-                        <video controls poster muted preload="metadata">
-                            <source src="assets/Cybersecurite pentester - JFMQMP.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
+    <div class="img-header"></div>
+
+    <div class="transition2">
+        <div id="transition1"></div>
+    </div>
+
+    <div class="row" id="video-player-wrapper">
+        <div class="col">
+
+            <video controls poster muted preload="metadata">
+                <source src="assets/Cybersecurite pentester - JFMQMP.mp4" type="video/mp4">
+            </video>
         </div>
+    </div>
 
 
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-9 col-md-6">
-                    <img src="assets/infographic1.png" id="graphic1">
-                </div>
-                <div class="col-xs-3 col-md-6">
-                    <p id="cyber"> Qu'est-ce que la cybersécurité ?</p>
-                    <dl>
-                        <dt>Définition : </dt>
-                        <dd>
-                            La cybersécurité ou la sécurité des technologies de l'information sont les techniques de protection des ordinateurs,
-                            des réseaux, des programmes et des données contre les accès non autorisés ou les attaques visant à les exploiter.
-
-                            La cybersécurité est également la pratique consistant à défendre les ordinateurs, les serveurs, les appareils mobiles, les systèmes électroniques, les réseaux et les données contre les attaques malveillantes.
-                            Elle est également connue sous le nom de sécurité des technologies de l'information ou sécurité de l'information électronique. Le terme s'applique dans divers contextes, des entreprises à l'informatique mobile, et peut être divisé en quelques catégories communes.
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-
-        <div class="transition">
-            V
-        </div>
-
-        <h1 id="pentester">PENTESTER (questions)</h1>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h2 class="left">
-                        ?    
-                    </h2>
-                    <p>                 
-                        Lorem ipsum dolor sit amet, in nec atomorum intellegam consectetuer.
-                        Vix probo nullam inciderint in, ea mel integre persecuti elaboraret. 
-                        Fastidii sadipscing eum in, pri veniam perpetua ei. 
-                        Et has luptatum deseruisse delicatissimi, paulo ludus antiopam ea est, in per veri lorem.
-                    
-                    </p>
-                </div>
-            
-                <div class="col-sm-4">
-                    <h2 class="right" >
-                        I 
-                    </h2>
-                    <p>                   
-                        Ne erant temporibus eos. 
-                        Pri ei elit petentium gloriatur, eos ei eligendi epicurei, detraxit honestatis quo et. 
-                        Ei duis conclusionemque ius, congue nostrum patrioque cum at, qui cu libris consequat aliquando. 
-                        Mei ei placerat lobortis hendrerit, cu elitr congue copiosae quo. 
-                        Eam ad propriae detracto iracundia. 
-                        Vidit eleifend ex mei, an eam viris quaeque gloriatur. 
-                        Cu unum elit dicam per, eu utroque placerat per.
-                    </p>
-                </div>
-
-                <div class="col-sm-4">
-                    <h2 class="right" >
-                        M
-                    </h2>
-                    <p>
-                        Ea alii tractatos mea, populo altera intellegebat qui cu, et quo soluta vidisse molestie. 
-                        Soluta constituam scribentur et mel, ex putent insolens has, ei sea choro ubique prodesset. 
-                        Duo et eripuit suscipiantur complectitur, cibo necessitatibus no cum, omnium dolores mediocritatem et pri. 
-                        No vim posse ubique omnesque.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div id="section-wrapper">
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="assets/infographic2.jpeg">
-                </div>
-                <div class="col-xl-2">
-                    Eos et hinc esse omnesque, duo eu stet ornatus probatus. Duo ut nibh iisque, id vitae insolens vel. Error veniam regione ex vim, eu has quidam periculis. 
-                    Postea deleniti at eos, ad iuvaret repudiare mea, ea legendos philosophia sit. Doctus persius eam cu, an his dicta utroque tincidunt.
-
-                    Sit nobis laoreet debitis ne, in mel singulis euripidis argumentum. 
-                    Ut wisi elitr mel, his purto mnesarchum deterruisset id. 
-                    Et atomorum voluptatum necessitatibus mea, ea dicunt meliore usu. 
-                    Vix everti dolores dissentiet te. 
-                    Discere eripuit civibus nam in, mel no movet causae, ex his quas postea. 
-                    Ad qui oporteat percipitur liberavisse, harum zril vim an, bonorum abhorreant appellantur in pri.
-                </div>
-            </div>
-
-        </div>
-
-            <p>
-                Ad modo errem prompta has, vel ubique salutatus an, ad quo amet nonumes. Apeirian deterruisset et mea. His id meliore deterruisset, mel debet iudico pertinacia at, ut pri duis sententiae definitiones. Ex eos error suscipit cotidieque, duo in denique dolores.
-            </p>
-            <p>
-                Sea odio labore latine no, id elitr honestatis sit. Nec at iusto perfecto recteque. Nam ut cibo patrioque necessitatibus, ei diceret facilis sea. Ad pri modus laoreet, eu cibo vidisse aliquando vel, everti diceret torquatos sit an.
-            </p>
-
-
-
+    <div class="container">
         <div class="row">
+            <div class="col-xs-9 col-md-6">
+                <img src="assets/infographic1.png" id="graphic1">
+            </div>
+            <div class="col-md-6">
+                <p id="cyber1"> Qu'est-ce que la cybersécurité ?</p>
+                <p id="cyber">La cybersécurité ou la sécurité des technologies de l'information sont les techniques de protection des ordinateurs, des réseaux, des programmes et des données contre les accès non autorisés ou les attaques visant à les exploiter. La cybersécurité
+                    est également la pratique consistant à défendre les ordinateurs, les serveurs, les appareils mobiles, les systèmes électroniques, les réseaux et les données contre les attaques malveillantes. Elle est également connue sous le nom de
+                    sécurité des technologies de l'information ou sécurité de l'information électronique. Le terme s'applique dans divers contextes, des entreprises à l'informatique mobile, et peut être divisé en quelques catégories communes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="pentester">PENTESTER (questions)</h1>
+
+    <div class="container" id="wrapper-col">
+        <div class="row">
+            <div class="col-sm-7">
+                <h2 class="left">
+                    C’est quoi un pentester ?
+                </h2>
+                <p>
+                    Un pentester est une personne qui va évaluer le niveau de vulnérabilité d’une application ou d’un site web en le regardant d’un œil malveillant. Le nom « Hacker Ethique » vient de là. Il doit ainsi effectuer différents test afin d’identifier et de catégoriser
+                    les vulnérabilités.
+
+                </p>
+            </div>
+
             <div class="col-m">
+                <h2 class="right">
+                    Quel est le salaire moyen du métier ?
+                </h2>
                 <p>
-                    Ad modo errem prompta has, vel ubique salutatus an, ad quo amet nonumes. Apeirian deterruisset et mea. His id meliore deterruisset, mel debet iudico pertinacia at, ut pri duis sententiae definitiones. Ex eos error suscipit cotidieque, duo in denique dolores.
-                </p>
-                <p>
-                    Sea odio labore latine no, id elitr honestatis sit. Nec at iusto perfecto recteque. Nam ut cibo patrioque necessitatibus, ei diceret facilis sea. Ad pri modus laoreet, eu cibo vidisse aliquando vel, everti diceret torquatos sit an.
+                    "Alors, en entré en tant que Pentester junior[...] on peut aller jusqu'à du 36000 à 42000 brût...
                 </p>
             </div>
         </div>
-
-        <div class="divider">
-
-        </div>
-
-        <div class="row" id="other">
-            <div class="col-xs-1">
-                <div id="main-form">
-                    <div id="sub-div">
-                    <form id="form-one" class="form">
-                        <h1>Feedback</h1>
-                        <p class="name">
-                        
-                        <p class="text">
-                        <textarea name="text" id="comment" placeholder="Comment..."></textarea>
-                        </p>
-                        <div class="submit">
-                        <input type="submit" value="Envoyer" id="button-bottom"/>
-                        <div class="ease"></div>
-                        </div>
-                    </form>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-sm">
+                Pour plus de questions, cliquez >>> <a href="Ref/Pentester.html">ici</a>
             </div>
         </div>
-
-        <div id="left-m">
-            <a href="ref/Mentions-legales.html">Mentions Légales</a>
+    </div>
+    <div id="section-wrapper">
+        <div class="row">
+            <div class="col-sm-3" id="graphic2">
+                <img src="assets/infographic2.jpeg">
+            </div>
+            <div class="col-m-4">
+                Contrairement aux hackeurs qui menacent la sécurité des utilisateurs du Web pour des raisons d'intérêt personel, Les hackeurs éthiques sont des experts en sécurité informatique qui ne s’introduisent dans les systèmes informatiques qu’après une mission
+                explicite. En raison du consentement de la « victime », cette variante de piratage est considérée comme éthiquement justifiable.
+            </div>
         </div>
+    </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-        
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-        <script src="js/effects.js" ></script>
-    </body>
+
+    <div class="row">
+        <div class="col-m-2">
+            <p>Le hacking est un phénomène vieux de plusieurs années déjà et qui continue à prendre de l’ampleur. Alors que faire ? Mieux vaut prendre proactivement les choses en main et vérifier la sécurité de toute votre communication. Pour ce faire, utilisez
+                un outil de sécurité automatique.
+            </p>
+            <p>Utilisez régulièrement ces tests et veillez à ce que vos systèmes soient à jour. Il est également fortement recommandé de mettre en place un plan d’action pour le cas où vous subiriez une attaque. Ce n’est pas très agréable de penser à cette
+                éventualité, mais mieux vaut y être préparé.
+            </p>
+        </div>
+    </div>
+
+    <div class="divider">
+
+    </div>
+
+    <div id="left-m">
+        <a href="ref/Mentions-legales.html">Mentions Légales</a>
+    </div>
 
     <footer id="footer">
         Credits &copy; IUT RCC
-        <span id="foot-rt"> <a href="ref/contact.html">Contact</a></span>
-        <span id="foot-lt"><a href="#top">&uarr;</a></span> 
+        <span id="foot-rt"> <a href="ref/aPropos.html">A Propos</a></span>
+        <span id="foot-lt"><a href="#top">&uarr;</a></span>
     </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+
+
+    <script src="js/effects.js"></script>
+</body>
 
 </html>

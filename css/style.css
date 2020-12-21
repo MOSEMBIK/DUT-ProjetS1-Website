@@ -1,4 +1,11 @@
 
+#pageTitle{
+    color:white;
+    margin:auto;
+    padding: 40px;
+    font-weight: bold;
+    font-size: 44px;
+}
 .container {
     max-width: 1200px;
     padding: auto;
@@ -10,6 +17,7 @@
 }
 
 body {
+    color: white;
     /* Fade-in effct on load*/
     font-family: 'Lato', sans-serif;
     font-size: 21px;
